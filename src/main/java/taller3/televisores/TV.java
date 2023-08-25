@@ -11,10 +11,10 @@ public class TV {
 	Control control;
 	
 	public TV (Marca marca, boolean estado) {
-		
+
+		numTV++;
 		this.marca = marca;
 		this.estado = estado;
-		numTV = numTV + 1;
 	}
 	
 	public Marca getMarca() {
