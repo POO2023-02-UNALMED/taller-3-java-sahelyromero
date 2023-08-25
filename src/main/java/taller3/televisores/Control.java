@@ -68,14 +68,14 @@ public class Control {
 		
 	}
 	
+	public TV getTV() {
+		
+		return this.tv;
+	}
+	
 	public void setTV(TV tv) {
 		
 		this.tv = tv;
-	}
-	
-	public TV getTV() {
-		
-		return tv;
 	}
 
 }
