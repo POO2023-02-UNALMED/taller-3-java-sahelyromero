@@ -14,7 +14,7 @@ public class TV {
 		
 		this.marca = marca;
 		this.estado = estado;
-		numTV += 1;
+		numTV = numTV + 1;
 	}
 	
 	public Marca getMarca() {
@@ -121,5 +121,15 @@ public class TV {
     		
     		this.volumen += 1;
     	}
+    }
+    
+    public void setNumtv() {
+    	
+    	return;
+    }
+    
+    public static int getNumtv() {
+    	
+    	return TV.numTV;
     }
 }
