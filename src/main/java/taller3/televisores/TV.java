@@ -41,6 +41,14 @@ public class TV {
 				canal = num;
 			
 			}
+
+			else{
+				return;
+			}
+		}
+
+		else {
+			return;
 		}
 	}
 	
@@ -102,6 +110,14 @@ public class TV {
 				
 				this.canal -= 1;
 			}
+
+			else{
+				return;
+			}
+		}
+
+		else{
+			return;
 		}
 	}
 	
@@ -120,7 +136,16 @@ public class TV {
 		if (this.canal < 120){
 			this.canal++;
 		}
+
+		else{
+			return;
+		}
     	}
+
+	else{
+		return;
+		
+	}
     }
     
     public void volumenUp() {
