@@ -2,19 +2,19 @@ package taller3.televisores;
 
 public class TV {
 	
-	static int numTV;
-	Marca marca;
+	private static int numTV;
+	private Marca marca;
 	int canal = 1;
-	int precio = 500;
+	private int precio = 500;
 	boolean estado;
 	int volumen = 1;
 	Control control;
 	
-	public TV (Marca marca, boolean estado) {
+	public TV (Marca obj, boolean encendido) {
 
 		numTV++;
-		this.marca = marca;
-		this.estado = estado;
+		marca = obj;
+		estado = encendido;
 	}
 	
 	public Marca getMarca() {
@@ -22,21 +22,21 @@ public class TV {
 		return marca;
 	}
 	
-	public void setMarca(Marca marca) {
+	public void setMarca(Marca obj) {
 		
-		this.marca = marca;
+		marca = obj;
 	}
 	
-    public int getCanal() {
+        public int getCanal() {
 		
 		return canal;
 	}
 	
-	public void setCanal(int canal) {
+	public void setCanal(int num) {
 		
-		if (this.estado == true && canal >= 1 && canal <= 120 ) {
+		if (estado == true && num >= 1 && num <= 120 ) {
 			
-			this.canal = canal;
+			canal = num;
 		}
 	}
 	
@@ -45,21 +45,21 @@ public class TV {
 		return precio;
 	}
 	
-	public void setPrecio(int precio) {
+	public void setPrecio(int valor) {
 		
-		this.precio = precio;
+		precio = valor;
 	}
 	
-    public int getVolumen() {
+        public int getVolumen() {
 		
 		return volumen;
 	}
 	
-	public void setVolumen(int volumen) {
+	public void setVolumen(int num) {
 		
-		if (this.estado == true && volumen >= 0 && volumen <= 7 ) {
+		if (estado == true && num >= 0 && num <= 7 ) {
 			
-			this.volumen = volumen;
+			volumen = num;
 		}
 	}
 	
@@ -68,9 +68,9 @@ public class TV {
 		return control;
 	}
 	
-	public void setControl(Control control) {
+	public void setControl(Control obj) {
 		
-		this.control = control;
+		control = obj;
 	}
 	
 	public void turnOn() {
@@ -123,9 +123,9 @@ public class TV {
     	}
     }
     
-    public void setNumtv() {
-    	
-    	return;
+    public static void setNumtv(int num) {
+	    
+	    TV.numTV = num;
     }
     
     public static int getNumtv() {
