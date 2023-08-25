@@ -34,9 +34,13 @@ public class TV {
 	
 	public void setCanal(int num) {
 		
-		if (this.estado == true && num >= 1 && num <= 120 ) {
+		if (this.estado == true) {
+
+			if (num >= 1 && num <= 120 ) {
+
+				canal = num;
 			
-			canal = num;
+			}
 		}
 	}
 	
@@ -92,9 +96,12 @@ public class TV {
 	
 	public void canalDown() {
 		
-		if (this.estado = true && this.canal > 1) {
-			
-			this.canal -= 1;
+		if (this.estado = true) {
+
+			if (this.canal > 1){
+				
+				this.canal -= 1;
+			}
 		}
 	}
 	
@@ -108,10 +115,11 @@ public class TV {
     
     public void canalUp() {
     	
-    	if (this.estado = true && this.canal < 120 ) {
-    		
-    		this.canal += 1;
-    		
+    	if (this.estado = true) {
+
+		if (this.canal < 120){
+			this.canal++;
+		}
     	}
     }
     
