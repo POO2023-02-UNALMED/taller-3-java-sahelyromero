@@ -123,12 +123,12 @@ public class TV {
     	}
     }
     
-    public static void setNumtv(int num) {
+    public static void setNumTV(int num) {
 	    
 	    TV.numTV = num;
     }
     
-    public static int getNumtv() {
+    public static int getNumTV() {
     	
     	return TV.numTV;
     }
