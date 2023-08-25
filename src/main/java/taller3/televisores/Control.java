@@ -2,7 +2,7 @@ package taller3.televisores;
 
 public class Control {
 	
-	private TV tv;
+	TV tv;
 	
 	public void turnOn() {
 		
@@ -64,18 +64,18 @@ public class Control {
 		
 		this.tv = televisor;
 		
-		this.tv.control = this;
+		this.tv.setControl(this);
 		
 	}
 	
-	public TV getTV() {
+	public TV getTv() {
 		
-		return this.tv;
+		return tv;
 	}
 	
-	public void setTV(TV tv) {
+	public void setTv(TV obj) {
 		
-		this.tv = tv;
+		tv = obj;
 	}
 
 }
