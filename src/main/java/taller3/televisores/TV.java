@@ -39,6 +39,11 @@ public class TV {
 			canal = num;
 			
 		}
+		
+		else {
+    		
+    		return;
+    	}
 	}
 	
 	public int getPrecio() {
@@ -62,6 +67,11 @@ public class TV {
 			
 			volumen = num;
 		}
+		
+		else {
+    		
+    		return;
+    	}
 		
 	}
 	
@@ -98,6 +108,11 @@ public class TV {
 			
 			canal--;
 		}
+		
+		else {
+    		
+    		return;
+    	}
 			
 	}
 	
@@ -106,6 +121,11 @@ public class TV {
     	if (estado = true && volumen > 0 && volumen <= 7) {
     		
     		volumen--;
+    	}
+    	
+    	else {
+    		
+    		return;
     	}
     	
 	}
@@ -117,6 +137,11 @@ public class TV {
     		canal++;
     	}
     	
+    	else {
+    		
+    		return;
+    	}
+    	
     }
     
     public void volumenUp() {
@@ -124,6 +149,11 @@ public class TV {
     	if (estado = true && volumen < 7 && volumen >= 0) {
     		
     		volumen++;
+    	}
+    	
+    	else {
+    		
+    		return;
     	}
     	
     }
