@@ -96,7 +96,7 @@ public class TV {
 		
 		if (estado = true && canal > 1) {
 			
-			++canal;
+			canal--;
 		}
 			
 	}
@@ -105,7 +105,7 @@ public class TV {
     	
     	if (estado = true && volumen > 0) {
     		
-    		++volumen;
+    		volumen--;
     	}
     	
 	}
