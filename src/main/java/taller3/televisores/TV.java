@@ -4,7 +4,7 @@ public class TV {
 	
 	private static int numTV;
 	private Marca marca;
-	int canal = 1;
+	private int canal = 1;
 	private int precio = 500;
 	boolean estado;
 	int volumen = 1;
