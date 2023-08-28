@@ -8,7 +8,7 @@ public class TV {
 	private int precio = 500;
 	boolean estado;
 	int volumen = 1;
-	Control control;
+	private Control control;
 	
 	public TV (Marca obj, boolean encendido) {
 
